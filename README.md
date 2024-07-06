@@ -11,9 +11,9 @@
 - IAM Services (roles, policies, IRSA)
 - Terraform
 
-##### Highlight 💡 : This is highly useful because we will need to create an IAM IRSA (IAM role for service account) and attach it to the pod appropriately.
+#### Highlight 💡 : This is highly useful because we will need to create an IAM IRSA (IAM role for service account) and attach it to the pod appropriately.
 
-##### Steps 📝 :
+#### Steps 📝 :
 
 1. [x] Create a Python application that uploads a file to an S3 bucket.  
 2. [x] Dockerize the application.  
@@ -22,7 +22,6 @@
 5. [x] Define all the required IAM services (role, policy, service account-IRSA) for the Kubernetes deployment.  
 6. [x] Initialize Git repository for version control.  
 
-![codesnap](https://github.com/assafdori/pod-to-s3/blob/main/k9s.png)
-![codesnap](https://github.com/assafdori/pod-to-s3/blob/main/codesnap.png)
-
 #### Conclusion 📌 : This project is a great example of how to upload a file to an S3 bucket from a Kubernetes pod. It is a great way to learn how to use IAM services and IRSA in Kubernetes.
+
+![codesnap](https://github.com/assafdori/pod-to-s3/blob/main/k9s.png)
