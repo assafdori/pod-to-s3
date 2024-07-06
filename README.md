@@ -1,7 +1,14 @@
 ## Overview: AWS EKS upload a file to an S3 Bucket from a Kubernetes pod ⛴️
 
 #### Objective: Create a Kubernetes deployment for a Python application that uploads a file to an S3 bucket.
-#### Technologies: Python, boto3, Docker, Kubernetes, EKS, IRSA (IAM Roles for Service Accounts), eksctl/Terraform.
+#### Technologies: 
+- Python, 
+- boto3 
+- Docker
+- Kubernetes
+- EKS
+- IRSA (IAM Roles for Service Accounts)
+- Terraform
 
 ##### Highlight: This is highly useful because we will need to create an IAM IRSA (IAM role for service account) and attach it to the pod appropriately.
 
