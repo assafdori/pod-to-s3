@@ -11,6 +11,7 @@
 3. [x] Dockerize the application.
 2. [x] Create a Kubernetes deployment for the Python application.
 3. [x] Define all the required IAM services (role, policy, service account-IRSA) for the Kubernetes deployment.
+4. [x] Define all infrastructure as code (IaC) Terraform (VPC, EKS, S3, IAM, Node Group, etc.).
 4. [x] Initialize Git repository for version control.
 
 ![codesnap](https://github.com/assafdori/pod-to-s3/blob/main/k9s.png)
