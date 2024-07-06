@@ -24,7 +24,7 @@
 
 #### Structure 🏗️ :
 - **infrastructure/**: Terraform code for creating the EKS cluster, S3 bucket, IAM services, etc.  
-- **kubernetes/**: Kubernetes deployment for the Python application.  
+- **kubernetes/**: Kubernetes deployment for the Python application & service account. 
 - **python-app/**: Python application that uploads a file to an S3 bucket.  
 
 #### Conclusion 📌 : This project is a great example of how to interact with AWS services from a Kubernetes pod. It is a great way to learn how to use IAM services and IRSA in Kubernetes.
