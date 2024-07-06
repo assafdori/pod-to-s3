@@ -2,12 +2,12 @@
 
 #### Objective: Create a Kubernetes deployment for a Python application that uploads a file to an S3 bucket.
 #### Technologies: 
-- Python, 
+- Python 
 - boto3 
 - Docker
 - Kubernetes
 - EKS
-- IRSA (IAM Roles for Service Accounts)
+- IAM Services (roles, policies, IRSA)
 - Terraform
 
 ##### Highlight: This is highly useful because we will need to create an IAM IRSA (IAM role for service account) and attach it to the pod appropriately.
