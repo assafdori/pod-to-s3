@@ -1,0 +1,51 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      serviceAccountName: app
+      initContainers:
+      - name: aws-cli
+        image: amazon/aws-cli
+        command: ['aws', 's3', 'ls']
+      containers:
+      - name: nginx  
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: s3-uploader
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: s3-uploader
+  template:
+    metadata:
+      labels:
+        app: s3-uploader
+    spec:
+      serviceAccountName: app
+      containers:
+      - name: s3-uploader
+        image: asixl/pod-to-s3:latest
+        env:
+        - name: AWS_REGION
+          value: us-east-1  # Replace with your AWS region
+        - name: S3_BUCKET
+          value: pod-to-s3-bucket26121996  # Replace with your S3 bucket name
