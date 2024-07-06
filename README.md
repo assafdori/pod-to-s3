@@ -1,4 +1,4 @@
-### Project Overview: AWS EKS upload a file to an S3 Bucket from a Kubernetes pod ⛴️
+## Overview: AWS EKS upload a file to an S3 Bucket from a Kubernetes pod ⛴️
 
 #### Objective: Create a Kubernetes deployment for a Python application that uploads a file to an S3 bucket.
 #### Technologies: Python, boto3, Docker, Kubernetes, EKS, IRSA (IAM Roles for Service Accounts), eksctl/Terraform.
