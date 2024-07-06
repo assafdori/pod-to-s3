@@ -69,12 +69,3 @@ resource "aws_iam_role_policy_attachment" "oidc" {
 
 }
 
-resource "aws_iam_role_policy_attachment" "s3-policy" {
-	role = aws_iam_role.oidc.name
-	policy_arn = aws_iam_policy.pod-to-s3-policy.arn
-
-}
-
-
-
-
