@@ -22,6 +22,6 @@
 5. [x] Define all the required IAM services (role, policy, service account-IRSA) for the Kubernetes deployment.  
 6. [x] Initialize Git repository for version control.  
 
-#### Conclusion 📌 : This project is a great example of how to upload a file to an S3 bucket from a Kubernetes pod. It is a great way to learn how to use IAM services and IRSA in Kubernetes.
+#### Conclusion 📌 : This project is a great example of how to interact with AWS services from a Kubernetes pod. It is a great way to learn how to use IAM services and IRSA in Kubernetes.
 
 ![codesnap](https://github.com/assafdori/pod-to-s3/blob/main/k9s.png)
