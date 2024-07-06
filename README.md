@@ -22,6 +22,11 @@
 5. [x] Define all the required IAM services (role, policy, service account-IRSA) for the Kubernetes deployment.  
 6. [x] Initialize Git repository for version control.  
 
+#### Structure 🏗️ :
+- 1. infrastructure/: Terraform code for creating the EKS cluster, S3 bucket, IAM services, etc.
+- 2. kubernetes/: Kubernetes deployment for the Python application.
+- 3. python-app/: Python application that uploads a file to an S3 bucket.
+
 #### Conclusion 📌 : This project is a great example of how to interact with AWS services from a Kubernetes pod. It is a great way to learn how to use IAM services and IRSA in Kubernetes.
 
 ![codesnap](https://github.com/assafdori/pod-to-s3/blob/main/k9s.png)
